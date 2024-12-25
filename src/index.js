@@ -4,8 +4,8 @@ import cors from "cors";
 import helmet from "helmet";
 import userRouter from "./Routes/user.routes.js";
 import cookieParser from "cookie-parser";
-import expenseRouter from "./Routes/expense.routes.js";
-import budgetsRouter from "./Routes/budget.routes.js";
+
+import markdownRouter from "./Routes/markdown.routes.js";
 
 const app = express();
 app.use(express.json());
@@ -26,8 +26,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/user", userRouter);
-app.use("/expense", expenseRouter);
-app.use("/budgets", budgetsRouter);
+app.use("/markdown", markdownRouter);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
