@@ -1,0 +1,29 @@
+. File Upload Endpoint
+Set up an endpoint for file uploads.
+Validate the uploaded files to ensure they are text files or Markdown files.
+Implement a strategy to handle name collisions (e.g., by appending a UUID or timestamp to filenames).
+Store uploaded files in a persistent storage system (local disk, S3 bucket, or database).
+
+<--------------------------------->
+4. Grammar Checking Endpoint
+Integrate a grammar-checking library (e.g., grammarly-api, textblob for Python, or an external grammar-checking API).
+Create an endpoint to process the note text and return grammar suggestions or corrections.
+
+
+
+
+5. Save Markdown Notes Endpoint
+Create an endpoint to accept Markdown text and save it to persistent storage.
+Include metadata (e.g., timestamps, user ID) for better management.
+
+
+<-------------------------------------->
+6. Render Markdown to HTML Endpoint
+Integrate a Markdown rendering library (e.g., markdown-it for Node.js or mistune for Python).
+Create an endpoint to render the Markdown note as HTML and return the output.
+
+<______________________________________>
+7. Notes Management
+Develop CRUD endpoints to manage notes (create, read, update, delete).
+Allow users to view all their saved notes in a list.
+
